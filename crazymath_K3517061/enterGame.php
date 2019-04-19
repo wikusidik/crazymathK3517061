@@ -17,8 +17,8 @@
 			move_uploaded_file($file_tmp,"photos/".$filename);
 			$val = [$user,0,$tanggal];
 
-			setcookie("loginInfo",json_encode($val),time()+(86400*7),"/crazymath");
-			setcookie("exitTime",$tanggal,time()+(86400*7),"/crazymath");
+			setcookie("loginInfo",json_encode($val),time()+(86400*7),"/crazymath_k3517061");
+			setcookie("exitTime",$tanggal,time()+(86400*7),"/crazymath_k3517061");
 			
 			echo "<h3>Note that, your name will last for one week since you quit the game <br/> unless you logout</h3>";
 ?>

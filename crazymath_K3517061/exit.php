@@ -6,7 +6,7 @@
 	$userInfo = isset($_COOKIE['loginInfo'])? json_decode($_COOKIE['loginInfo']) : "";
 	
 	$val = [$userInfo[0],$nilai,$userInfo[2]]; //memasukkan nilai ke cookie
-	setcookie("loginInfo",json_encode($val),time() + 86400*7,"/crazymath");
+	setcookie("loginInfo",json_encode($val),time() + 86400*7,"/crazymath_k3517061");
 	
 	if($nyawa == 0){
 		$tanggal = str_replace("/","",$userInfo[2]);
@@ -19,7 +19,7 @@
 		$sql->close();
 	}
 	$val = array(date("Y/m/d H:i:s"),$nyawa);
-	setcookie("exitTime",json_encode($val),time() + 86400*7,"/crazymath"); //memasukkan waktu terakhir main
+	setcookie("exitTime",json_encode($val),time() + 86400*7,"/crazymath_k3517061"); //memasukkan waktu terakhir main
 	
 	session_destroy();
 	if($nyawa == 0){

@@ -15,7 +15,7 @@
 				}
 				if($_SESSION['nilai'] > $userInfo[1]){
 					$userInfo[1] = $_SESSION['nilai'];
-					setcookie("loginInfo",json_encode($userInfo),time() + 86400*7,"/crazymath");
+					setcookie("loginInfo",json_encode($userInfo),time() + 86400*7,"/crazymath_k3517061");
 				}
 			}else{
 				$_SESSION['nilai'] = $_SESSION['nilai'] - 5;
